@@ -4,7 +4,7 @@ class UsersController < ApplicationController
     end    
 
     post "/users" do
-        user = User.create(params)
+        user = User.create(first_name: params[:firstName], last_name: params[:lastName], user_name: params[:username], email: params[:email], password: params[:password])
         user.to_json
     end
     
