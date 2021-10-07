@@ -9,7 +9,7 @@ puts "Seeding Channels..."
 
 puts "Seeding Messages..."
 
-# Seed your database here
-
+# Seed you
+m1 = Message.create(message: "Hello!", user_id: 1)
 
 puts "✅ Done seeding!"
