@@ -10,7 +10,7 @@ class UsersController < ApplicationController
 
     post "/login" do
         # binding.pry
-        login = User.find_by(email: params[:email],password: params[:password] )
+        login = User.find_by(email: params[:email], password: params[:password] )
         login.to_json
     end
 end
